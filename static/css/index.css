@@ -1,0 +1,39 @@
+body {
+    background: #1B1C1D;
+}
+main {
+    background: white;
+}
+/*---------- display -----------*/
+.m-inline-block {
+    display: inline-block;
+}
+/*---------- padding -----------*/
+.m-padded-td-mini {
+    padding: 0.2em 0 !important;
+}
+.m-padded-td-large {
+    padding: 2em 0 !important;
+}
+.m-padded-td-max {
+    padding: 4em 0 !important;
+}
+
+/*---------- text -----------*/
+.m-text-thin {
+    font-weight: 300 !important;
+}
+
+.m-text-spaced {
+    letter-spacing: 1px !important;
+}
+
+.m-text-lined {
+    line-height: 1.8;
+}
+
+
+/*---------- opacity -----------*/
+.m-opacity-min {
+    opacity: 0.8 !important;
+}
