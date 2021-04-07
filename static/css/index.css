@@ -1,20 +1,52 @@
 body {
     background: #1B1C1D;
 }
+
 main {
     background: white;
 }
+
+.m-container {
+    box-sizing: border-box;
+    max-width: 74em !important;
+    margin: auto !important;
+}
+
 /*---------- display -----------*/
 .m-inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
+
+/*---------- margin -----------*/
+.m-margin-td {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
 /*---------- padding -----------*/
 .m-padded-td-mini {
     padding: 0.2em 0 !important;
 }
+
 .m-padded-td-large {
     padding: 2em 0 !important;
 }
+
+.m-padded-td-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.m-padded-td {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.m-padded-rl {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
 .m-padded-td-max {
     padding: 4em 0 !important;
 }
@@ -31,7 +63,11 @@ main {
 .m-text-lined {
     line-height: 1.8;
 }
+/*---------- color -----------*/
+.m-black {
+    color: #1B1C1D !important;
 
+}
 
 /*---------- opacity -----------*/
 .m-opacity-min {
