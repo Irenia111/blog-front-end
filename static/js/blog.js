@@ -1,6 +1,6 @@
-$('#great-button')
+$('.wechat-pop-up-button')
   .popup({
-    popup: $('.great-pop-up'),
+    popup: $('.wechat-pop-up.popup'),
     on: 'click',
     position   : 'top center',
   });
