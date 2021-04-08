@@ -98,7 +98,10 @@ main {
 /*---------- color -----------*/
 .m-black {
     color: #1B1C1D !important;
+}
 
+.m-pink {
+    color: #FF1493 !important;
 }
 
 /*---------- opacity -----------*/
