@@ -6,6 +6,7 @@
     <title>blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
     <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/lib/editor-md/css/editormd.css">
 </head>
 <body>
 <!-- 导航 -->
@@ -66,7 +67,9 @@
                         </div>
                     </div>
                     <div class="required field">
-                        <textarea name="content" placeholder="内容"></textarea>
+                        <div id="content-editormd" style="z-index: 10 !important;">
+                            <textarea name="content" style="display:none;"></textarea>
+                        </div>
                     </div>
                     <div class="three fields">
                         <div class="required field">
@@ -141,8 +144,10 @@
         <p class="m-text-lined m-text-spaced m-text-thin m-opacity-tiny">© 2021 Irenia</p>
     </div>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../static/lib/jquery.min.js"></script>
+<script src="../static/lib/editor-md/editormd.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 <script src="../static/js/admin.js"></script>
+<script src="../static/js/markdown.js"></script>
 </body>
 </html>
