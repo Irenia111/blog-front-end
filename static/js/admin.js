@@ -1,6 +1,4 @@
-$('.ui.dropdown')
-  .dropdown()
-;
+$('.ui.dropdown').dropdown();
 
 // 表单验证
 $('.ui.form').form({
@@ -13,5 +11,4 @@ $('.ui.form').form({
       }]
     }
   }
-})
-;
+});
