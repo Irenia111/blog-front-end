@@ -9,206 +9,214 @@
 </head>
 <body>
 <!-- 导航 -->
-<nav class="ui sticky inverted attached segment m-padded-td-mini m-shadow-small" style="border-color: transparent">
-    <div class="ui container m-shadow-small">
-        <div class="ui inverted secondary stackable menu m-shadow-small">
-            <h2 class="ui pink header item">Irenia</h2>
-            <a class="ui item m-mobile-hide nav-item">
-                <i class="book icon"></i>
-                首页
-            </a>
-            <a class="ui item m-mobile-hide nav-item">
-                <i class="folder open icon"></i>
-                分类
-            </a>
-            <a class="ui item m-mobile-hide nav-item">
-                <i class="tags icon"></i>
-                标签
-            </a>
-            <a class="ui item m-mobile-hide nav-item">
-                <i class="archive icon"></i>
-                归档
-            </a>
-            <a class="ui item m-mobile-hide nav-item">
-                关于我
-                <i class="sign language icon"></i>
-            </a>
-            <div class="right item m-mobile-hide nav-item">
-                <div class="ui inverted transparent  icon input">
-                    <input type="text" placeholder="... ... ..."/>
-                    <i class="search link icon"></i>
-                </div>
-            </div>
+<div class="ui tiny thin sidebar inverted vertical menu uncover animating">
+    <div class="ui inverted transparent icon input">
+        <i class="search icon"></i>
+        <input type="text" placeholder="搜索……">
+    </div>
+    <div class="item">
+        <div class="menu">
+            <a href="#" class="item">用户管理</a>
+            <a href="#" class="item">博客管理</a>
+            <a href="#" class="item">好友管理</a>
+            <a href="#" class="item">类别管理</a>
         </div>
     </div>
-    <a href="#" class="ui black icon button m-top-right m-mobile-show menu-toggle">
-        <i class="sidebar icon"></i>
+    <div class="item">个人信息</div>
+</div>
+<nav class="ui fixed inverted borderless menu">
+    <a id="toc" class="icon item m-mobile-show">
+        <i class="content icon"></i>
     </a>
+    <h2 class="ui pink header item m-mobile-hide">Irenia</h2>
+    <a class="ui item m-mobile-hide">
+        <i class="book icon"></i>首页
+    </a>
+    <a class="ui item m-mobile-hide">
+        <i class="folder open icon"></i>分类
+    </a>
+    <a class="ui item m-mobile-hide">
+        <i class="tags icon"></i>标签
+    </a>
+    <a class="ui item m-mobile-hide">
+        <i class="archive icon"></i>归档
+    </a>
+    <a class="ui item m-mobile-hide">
+        关于我<i class="sign language icon"></i>
+    </a>
+    <div class="right item m-mobile-hide">
+        <div class="ui inverted transparent icon input">
+            <input type="text" placeholder="... ... ..."/>
+            <i class="search link icon"></i>
+        </div>
+    </div>
 </nav>
 <!-- 内容 -->
-<main class="m-padded-td-big">
-    <div class="m-container-small">
-        <div class="ui container">
-            <div class="ui segments">
-                <!----- header ----->
-                <div class="ui segment">
-                    <div class="ui middle aligned two column grid">
-                        <div class="column">
-                            <h3 class="ui pink header">博客</h3>
-                        </div>
-                        <div class="column right aligned">
-                            共 <h3 class="ui orange header m-inline-block m-text-thin">14</h3> 篇
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ui styled fluid accordion">
-                <div class="active title">
-                    <i class="dropdown icon"></i>
-                    2021
-                </div>
-                <div class="active content">
-                    <div class="ui divided items m-padded-rl">
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+<main class="pusher">
+    <div class="main-container">
+        <div class="m-padded-td-big m-container m-mobile-padded-td-big">
+            <div class="ui container">
+                <div class="ui segments">
+                    <!----- header ----->
+                    <div class="ui segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui pink header">博客</h3>
                             </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
-                            </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
-                            </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
+                            <div class="column right aligned">
+                                共 <h3 class="ui orange header m-inline-block m-text-thin">14</h3> 篇
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="title">
-                    <i class="dropdown icon"></i>
-                    2021
-                </div>
-                <div class="content">
-                    <div class="ui divided items m-padded-rl">
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                <div class="ui styled fluid accordion">
+                    <div class="active title">
+                        <i class="dropdown icon"></i>
+                        2021
+                    </div>
+                    <div class="active content">
+                        <div class="ui divided items m-padded-rl">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
-                            </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
-                            </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="active title">
-                    <i class="dropdown icon"></i>
-                    2021
-                </div>
-                <div class="active content">
-                    <div class="ui divided items m-padded-rl">
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        2021
+                    </div>
+                    <div class="content">
+                        <div class="ui divided items m-padded-rl">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                    </div>
+                    <div class="active title">
+                        <i class="dropdown icon"></i>
+                        2021
+                    </div>
+                    <div class="active content">
+                        <div class="ui divided items m-padded-rl">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <div class="header"><i class="star icon"></i>标题</div>
-                                <span class="content m-opacity-tiny m-pink">2021-03-21</span>
-                            </div>
-                            <div class="description">
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
-                                <a target="_blank" class="ui label basic">网sss络</a>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header"><i class="star icon"></i>标题</div>
+                                    <span class="content m-opacity-tiny m-pink">2021-03-21</span>
+                                </div>
+                                <div class="description">
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                    <a target="_blank" class="ui label basic">网sss络</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -216,9 +224,14 @@
             </div>
         </div>
     </div>
+    <footer class="ui inverted vertical footer segment m-padded-td-max m-mobile-show">
+        <div class="ui center aligned container">
+            <p class="m-text-lined m-text-spaced m-text-thin m-opacity-tiny">© 2021 Irenia</p>
+        </div>
+    </footer>
 </main>
 <!--页脚-->
-<footer class="ui inverted vertical footer segment m-padded-td-max">
+<footer class="ui inverted vertical footer segment m-padded-td-max m-mobile-hide">
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
             <div class="four wide column">
