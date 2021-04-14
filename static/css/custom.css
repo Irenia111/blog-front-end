@@ -1,14 +1,14 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     overflow: auto;
     background: #1B1C1D;
 }
 
-main {
+.main-container {
     width: 100%;
     background: url("../images/memphis-mini.png");
+    padding-top: 5em;
 }
 
 /*---------- container -----------*/
@@ -129,9 +129,12 @@ main {
     .m-mobile-hide {
         display: none !important;
     }
-
     .m-mobile-show {
         display: block !important;
+    }
+    .m-mobile-padded-td-big{
+        padding-top: 0em !important;
+        padding-bottom: 3em !important;
     }
 
     .m-padded-rl-response {
