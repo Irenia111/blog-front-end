@@ -55,10 +55,10 @@
     <div class="main-container">
         <div class="m-padded-td-max m-container m-mobile-padded-td-big">
             <div class="ui container">
-                <div class="ui stackable grid">
-                    <div class="eleven wide column">
+                <div class="ui grid">
+                    <div id="blog" class="eleven wide column">
                         <!-- header -->
-                        <div class="ui segment top attached">
+                        <div class="ui segment top attached m-mobile-hide">
                             <div class="ui horizontal link list">
                                 <div class="item">
                                     <img src="https://picsum.photos/id/0/100/100" alt=""
@@ -74,11 +74,11 @@
                             </div>
                         </div>
                         <!-- images -->
-                        <div class="ui segment attached">
+                        <div class="ui segment attached m-mobile-hide">
                             <img src="https://picsum.photos/id/200/800/450" alt="" class="ui rounded fluid image">
                         </div>
                         <!-- content -->
-                        <div class="ui segment padded attached bottom">
+                        <div id="blog-content" class="ui segment padded attached bottom">
                             <div class="ui right aligned basic segment">
                                 <div class="ui label orange basic">原创</div>
                             </div>
@@ -471,6 +471,28 @@ tocbot.destroy();</code></pre>
                             </div>
                         </div>
                     </div>
+                    <div class="column m-mobile-show" style="margin-left: -1em; width: 3em !important;">
+                        <div class="ui sticky mobile">
+                            <div class="ui mini icon vertical buttons">
+                                <button class="ui white button m-pink toTop-button"><i class="arrow up icon"></i></button>
+                                <!---
+                                <button class="share-pop-up-button ui pink button"><i class="share alternate icon"></i></button>
+                                --->
+                                <button class="toc-pop-up-button ui pink button"><i class="list icon"></i></button>
+                            </div>
+                            <!---
+                            <div class="share-pop-up ui flowing popup">
+                                <div class="ui label basic pink">
+                                </div>
+                            </div>
+                            -->
+                            <div class="toc-pop-up ui flowing popup">
+                                <ol class="mobile-tocbot">
+                                </ol>
+                            </div>
+                            <!-- great -->
+                            </div>
+                        </div>
                     <div class="five wide column m-mobile-hide">
                         <div class="ui sticky">
                             <!-- nav -->
@@ -487,24 +509,20 @@ tocbot.destroy();</code></pre>
                                     </ol>
                                 </div>
                             </div>
-                            <!-- great -->
-                            <div class="ui center aligned basic segment">
-                                <button class="ui labeled icon mini button">
-                                    <i class="left chevron icon"></i>
-                                    上一篇
-                                </button>
+                            <!-- buttons -->
+
+                            <div class="ui right aligned basic segment">
                                 <div class="wechat-pop-up-button ui orange mini button">分享</div>
                                 <div class="great-pop-up ui flowing popup">
                                     <div class="ui label basic pink">
-                                        <h4 class="ui header pink">微信</h4>
-                                        <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
+                                        <div id="qrcode" class="ui rounded bordered image" style="width: 110px"></div>
                                     </div>
                                 </div>
-                                <div class="wechat-pop-up-button ui orange mini button">向上</div>
-                                <button class="ui labeled right icon mini button">
+                                <button class="ui right labeled icon mini secondary button toTop-button">
+                                    <i class="right arrow up icon  m-pink"></i>
                                     回到顶部
-                                    <i class="right arrow up icon"></i>
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -517,6 +535,7 @@ tocbot.destroy();</code></pre>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 <script src="../static/lib/prism/prism.js"></script>
 <script src="../static/lib/tocbot/tocbot.min.js"></script>
+<script src="../static/lib/qrcode/qrcode.min.js"></script>
 <script src="../static/js/blog.js"></script>
 <script src="../static/js/index.js"></script>
 </body>

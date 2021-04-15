@@ -124,12 +124,14 @@ body {
 
 
 /*---------- sticky -----------*/
-.ui.sticky.fixed.top {
-    top: 7.2em;
+.ui.sticky.fixed.top.mobile {
+    top: 3.8em !important;
     bottom: auto;
 }
-
-
+.ui.sticky.fixed.top {
+    top: 7.2em !important;
+    bottom: auto;
+}
 /*---------- -----------*/
 .m-mobile-show {
     display: none !important;
