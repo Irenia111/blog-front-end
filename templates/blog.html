@@ -9,25 +9,24 @@
 </head>
 <body>
 <!-- 导航 -->
-<div class="ui tiny thin sidebar inverted vertical menu uncover animating">
-    <div class="ui inverted transparent icon input">
-        <i class="search icon"></i>
-        <input type="text" placeholder="搜索……">
-    </div>
+<div class="ui sidebar inverted vertical menu uncover animating">
     <div class="item">
-        <div class="menu">
-            <a href="#" class="item">用户管理</a>
-            <a href="#" class="item">博客管理</a>
-            <a href="#" class="item">好友管理</a>
-            <a href="#" class="item">类别管理</a>
+        <div class="ui inverted transparent input">
+            <input type="text" placeholder="搜索"/>
+            <i class="search link icon"></i>
         </div>
     </div>
-    <div class="item">个人信息</div>
+    <a class="ui item">首页<i class="book icon"></i></a>
+    <a class="ui item">分类<i class="folder open icon"></i></a>
+    <a class="ui item">标签<i class="tags icon"></i></a>
+    <a class="ui item">归档<i class="archive icon"></i></a>
+    <a class="ui item">关于我<i class="sign language icon"></i></a>
 </div>
 <nav class="ui fixed inverted borderless menu">
     <a id="toc" class="icon item m-mobile-show">
         <i class="content icon"></i>
     </a>
+    <div class="ui right item m-mobile-show m-pink">Irenia</div>
     <h2 class="ui pink header item m-mobile-hide">Irenia</h2>
     <a class="ui item m-mobile-hide">
         <i class="book icon"></i>首页
@@ -489,34 +488,25 @@ tocbot.destroy();</code></pre>
                                 </div>
                             </div>
                             <!-- great -->
-                            <div class="ui segment basic" style="padding: 0">
-                                <button class="ui labeled icon mini button left floated">
+                            <div class="ui center aligned basic segment">
+                                <button class="ui labeled icon mini button">
                                     <i class="left chevron icon"></i>
                                     上一篇
                                 </button>
-                                <div id="great-button" class="wechat-pop-up-button ui orange mini button left floated">赞赏
-                                </div>
+                                <div class="wechat-pop-up-button ui orange mini button">分享</div>
                                 <div class="great-pop-up ui flowing popup">
                                     <div class="ui label basic pink">
                                         <h4 class="ui header pink">微信</h4>
                                         <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
                                     </div>
                                 </div>
-                                <div class="wechat-pop-up-button ui orange mini button right floated">赞赏</div>
-                                <div class="great-pop-up ui flowing popup">
-                                    <div class="ui label basic pink">
-                                        <h4 class="ui header pink">微信</h4>
-                                        <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
-                                    </div>
-                                </div>
-
-                                <button class="ui right labeled icon mini button right floated">
-                                    下一篇
-                                    <i class="right chevron icon"></i>
+                                <div class="wechat-pop-up-button ui orange mini button">向上</div>
+                                <button class="ui labeled right icon mini button">
+                                    回到顶部
+                                    <i class="right arrow up icon"></i>
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -125,7 +125,7 @@ body {
 
 /*---------- sticky -----------*/
 .ui.sticky.fixed.top {
-    top: 8em;
+    top: 7.2em;
     bottom: auto;
 }
 

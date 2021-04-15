@@ -1,3 +1,7 @@
+if ($(window).width() > 768) {
+  //只在宽屏时触发
+  $('.ui.sticky').sticky();
+}
 
 $('.wechat-pop-up-button')
   .popup({
